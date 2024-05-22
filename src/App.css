@@ -1,0 +1,133 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.header, .footer {
+  background-color: #282c34;
+  color: white;
+  text-align: center;
+  padding: 1em;
+}
+
+.header {
+  font-size: 2em;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.footer {
+  margin-top: auto;
+  padding: 1em 0;
+}
+
+.main {
+  flex: 1;
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5em;
+  justify-content: center;
+}
+
+.product-card {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 1.5em;
+  max-width: 250px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.product-card img {
+  max-width: 100%;
+  height: auto;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 1em;
+  border-radius: 10px;
+}
+
+.product-card a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.product-card h2 {
+  font-size: 1.2em;
+  margin: 0.5em 0;
+  color: #333;
+}
+
+.product-card p {
+  font-size: 0.9em;
+  color: #666;
+  margin: 0.5em 0;
+}
+
+.product-card strong {
+  color: #000;
+  font-size: 1.1em;
+}
+
+.product-detail {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  margin: 2em;
+  padding: 2em;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-detail img {
+  max-width: 100%;
+  height: auto;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 1em;
+  border-radius: 10px;
+}
+
+.product-detail h2 {
+  font-size: 2em;
+  margin: 0.5em 0;
+  color: #333;
+}
+
+.product-detail p {
+  font-size: 1em;
+  color: #666;
+  margin: 1em 0;
+}
+
+.product-detail strong {
+  color: #000;
+  font-size: 1.5em;
+}
